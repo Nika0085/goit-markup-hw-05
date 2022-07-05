@@ -740,7 +740,7 @@
     border: 0;
   }
   
-  
+
   .gallery-list-button-text {
     padding: 10px 22px;
   }
@@ -748,6 +748,9 @@
   .gallery-description {
     padding-bottom: 20px;
     padding-left: 0;
+    position: relative;
+    z-index: 1002;
+    background-color: #ffffff;
   }
   .gallery-description-type {
     font-size: 16px;
@@ -1094,6 +1097,7 @@
     border-radius: 4px;
     margin-top: 40px;
     margin-bottom: 200px;
+    margin-right: 20px;
   }
   
   .submit {
@@ -1393,8 +1397,8 @@
       top: 268px;
     }
   
-    .icon:hover,
-    .icon:focus {
+    .icon-form:hover,
+    .icon-form:focus {
       fill: var(--main-color);
     }
   
