@@ -855,15 +855,13 @@
   
   
   .team-icons {
-    width: 270px;
-    height: 120px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
     fill: #afb1b8;
-    flex-basis: calc((100% - 90px) / 4);
+    margin-top: 20px;
   }
   
   .ellipse {
@@ -1130,7 +1128,7 @@
     display: flex;
     padding-top: 0px;
     margin-bottom: 20px;
-    margin-left: 60px;
+    margin-left: 165px;
     align-items: start;
     flex-basis: calc((100% - 90px) / 2);
   }
@@ -1256,7 +1254,7 @@
       margin-bottom: 4px;
       margin-top: 10px;
     }
-    
+
     .modal-form textarea::placeholder {
       color: rgba(117, 117, 117, 0.5);
       font-size: 12px;
@@ -1271,12 +1269,28 @@
       padding-left: 42px;
     }
     
+    .modal-form input :focus-within {
+      fill: #2196f3;
+    }
+
+    .modal-form input :hover {
+      fill: #2196f3;
+    }
+
     .modal-form textarea {
       height: 120px;
       width: 448px;
       padding: 12px 16px;
     }
+
+    .modal-form textarea :focus-within {
+      fill: #2196f3;
+    }
     
+    .modal-form input :focus-within {
+      fill: #2196f3;
+    }
+
     .modal-form input,
     .modal-form textarea {
       color: var(--text-grey);
@@ -1367,10 +1381,14 @@
       cursor: pointer;
     }
     
-    .modal-form label:focus-within svg {
+    .modal-form label:focus-within svg{
       fill: #2196f3;
     }
     
+        
+    .modal-form label:hover svg{
+      fill: #2196f3;
+    }
     .icon-form {
       width: 12px;
       height: 12px;
@@ -1378,7 +1396,7 @@
       position: absolute;
       left: 52px;
     }
-    
+
     .icon-form-avatar {
       width: 12px;
       height: 12px;
@@ -1395,11 +1413,6 @@
       width: 15px;
       height: 12px;
       top: 268px;
-    }
-  
-    .icon-form:hover,
-    .icon-form:focus {
-      fill: var(--main-color);
     }
   
     .overlay {
